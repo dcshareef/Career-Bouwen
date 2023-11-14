@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Courses</title>
+    <link rel="website icon" href="CareerBouwen[1].jpg" type="jpg"> 
+    <!-- add png file above -->
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="courses.css">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Scroll-Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+    
+    
+    <header>
+        <!-- Contact Info -->
+        <div class="contactInfo">
+            <div style="display: flex;">
+                <a href="tel:+91-884 869 7113">+91-884 869 7113</a>
+                    &nbsp;&nbsp;,&nbsp;&nbsp;
+                <a href="tel:+91-884 869 7113">+91-884 869 7113</a>
+            </div>
+            <div>
+                <a href="http://contact@techolas.com" target="_blank" style="text-decoration: none; color: #fff;">contact@techolas.com</a>
+            </div>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="nav-bar">
+            <div class="container">
+                <div class="logo">
+                    <img src="CareerBouwen[1].jpg" alt="">
+                    <a class="navbar-brand" href="index.html"><span>&nbsp;CAREER</span><br><span>BOUWEN</span></a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <i class="bi bi-house-door mt-3"></i>
+                        <a class="nav-link mt-3" href="index.html">
+                            Home<span><i class="bi bi-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="bi bi-buildings mt-3"></i>
+                        <a class="nav-link mt-3" href="about.html">
+                            About Us<span><i class="bi bi-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="bi bi-c-square mt-3"></i>
+                        <a class="nav-link mt-3" href="courses.html">
+                            Courses<span><i class="bi bi-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <i class="bi bi-headset mt-3"></i>
+                        <a class="nav-link mt-3" href="contact_us.html">
+                            Contact Us<span><i class="bi bi-chevron-right"></i></span>
+                        </a>
+                    </li>
+                    <!-- Button -->
+                    <li class="nav-ite btn-wrapper">
+                        <div>
+                            <a href="sign-up.html"><button type="button" class="mt-3"><i class="bi bi-person-fill"></i> &nbsp;Sign Up</button></a>
+                            <a href="login.html"><button type="button" class="loginBtn mt-3"><i class="bi bi-box-arrow-in-right"></i> &nbsp;Login</button></a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Registration-Form -->
+    <div class="formWrapper container-fluid" id="popupForm">
+        <div class="formContents row">
+            <div class="col-12 col-md-5">
+                <form action="" name="popupRegForm" onsubmit="formValidate(event)">
+                    <span class="close" id="closePopupBtn">&times;</span>
+                    <div class="formInputs">
+                        <div class="inputBox">
+                            <label for="">Name</label>
+                            <input type="text" name="name" placeholder="Enter your name" id="">
+                            <small id="nameError"></small>
+                        </div>
+                        <div class="inputBox">
+                            <label for="">Number</label>
+                            <input type="number" name="number" placeholder="+91 808 657 5215" id="">
+                            <small id="numberError"></small>
+                        </div>
+                        <div class="inputBox">
+                            <label for="course">Select Course:</label>
+                            <select id="course" name="course">
+                                <option value="">Select</option>
+                                <option value="python-fullstack">Python Full Stack</option>
+                                <option value="mern-stack">MERN Stack</option>
+                                <option value="digital-marketing">Digital Marketing</option>
+                                <option value="data-science">Data Science</option>
+                                <option value="data-analytics">Data Analytics</option>
+                                <option value="business-analytics">Business Analytics</option>
+                            </select>
+                            <div class="inputBox">
+                                <label for="" id="message-label">Your Message</label>
+                                <textarea name="message" id="" cols="30" rows="5" placeholder="Enter your message"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit"><span>Enroll</span>&nbsp;&nbsp;<i class="bi bi-chevron-right"></i></button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-md-7">
+                <img src="img-1.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+<!-- Registration-Form ends here -->
+
+
+<!-- Hero Section -->
+    <section class="hero-section">
+        <hr>
+        <h5><a href="index.html" style="text-decoration: none; color: #fff;">Home</a> > <a href="" style="text-decoration: none; color: #fff;">Courses</a></h5>
+        <hr>
+        <div class="container">
+            <h2>CAREER BOUWEN</h2>
+            <h1>COURSES</h1>
+        </div>
+    </section>
+
+<!-- Fixed-Contact-Buttons -->
+    <button id="fixed-btns-wrapper" style="border: 0;"><img src="message-icon.png" alt=""></button>
+    <a class="whatsapp" href="https://wa.me/+918086575215"><img src="WhatsApp.png" alt=""></a>
+    <a class="dial" href="tel:8086575215"><img src="call.png" alt=""></a>
+    <a class="text" href=""><img src="message.webp" alt=""></a>
+
+
+<!-- Courses Section -->
+    <section class="courses-section" data-aos="fade-up" data-aos-delay="200" data-aos-duration='1000'>
+        <div class="container">
+            <div class="row">
+                <!-- Heading -->
+                <div class="courses-head">
+                    <h1>Featured Courses</h1>
+                    <p>Learn latest technologies from industrial experts</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-xxl-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration='1000'>
+                    <div class="course-Wrapper">
+                        <a href="python.html">
+                            <div class="course-description">
+                                <h1>Python Fullstack</h1>
+                                <p>Python is a user-friendly and versatile programming language used in web development, data analysis, and automation, known for its simplicity and readability.</p>
+                                <div class="icons">
+                                    <h4><i class="bi bi-arrow-right"></i></h4>
+                                    <img src="python-1.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="python.html">
+                            <div class="image-Wrapper">
+                                <img src="background-15.jpg" alt="" class="img-fluid" style="object-fit: cover;">
+                            </div>
+                        </a>
+                        <button onclick="registerNow()">Register Now</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xxl-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration='1000'>
+                    <div class="course-Wrapper">
+                        <a href="">
+                            <div class="course-description">
+                                <h1>MERN Stack</h1>
+                                <p>MERN stack is a web development framework that combines MongoDB, Express, React, and Node.js for building dynamic web applications.</p>
+                                <div class="icons">
+                                    <h4><i class="bi bi-arrow-right"></i></h4>
+                                    <img src="MERN-logo.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="image-Wrapper">
+                                <img src="background-img-17.jpg" alt="" class="img-fluid" style="object-fit: cover;">
+                            </div>
+                        </a>
+                        <button onclick="registerNow()">Register Now</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xxl-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration='1000'>
+                    <div class="course-Wrapper">
+                        <a href="">
+                            <div class="course-description">
+                                <h1>Digital Marketing</h1>
+                                <p>Digital marketing leverages online channels to reach and engage with target audiences, making it a crucial strategy for promoting products and services in the digital age.</p>
+                                <div class="icons">
+                                    <h4><i class="bi bi-arrow-right"></i></h4>
+                                    <img src="marketing.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="image-Wrapper">
+                                <img src="background-10.jpg" alt="" class="img-fluid" style="object-fit: cover;">
+                            </div>
+                        </a>
+                        <button onclick="registerNow()">Register Now</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xxl-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration='1000'>
+                    <div class="course-Wrapper">
+                        <a href="">
+                            <div class="course-description">
+                                <h1>Business Analytics</h1>
+                                <p>Business Analytics: Harness the potential of data to optimize operations, make strategic decisions, and propel your business forward in the digital age</p>
+                                <div class="icons">
+                                    <h4><i class="bi bi-arrow-right"></i></h4>
+                                    <img src="business-analytics.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="image-Wrapper">
+                                <img src="background-img-26.jpg" alt="" class="img-fluid" style="object-fit: cover;">
+                            </div>
+                        </a>
+                        <button onclick="registerNow()">Register Now</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xxl-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration='1000'>
+                    <div class="course-Wrapper">
+                        <a href="">
+                            <div class="course-description">
+                                <h1>Data Science</h1>
+                                <p>Data Science: Unearth insights from data, solve complex problems, and drive innovation through the power of analytics and machine learning.</p>
+                                <div class="icons">
+                                    <h4><i class="bi bi-arrow-right"></i></h4>
+                                    <img src="data-Science.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="image-Wrapper">
+                                <img src="background-img-8.jpg" alt="" class="img-fluid" style="object-fit: cover;">
+                            </div>
+                        </a>
+                        <button onclick="registerNow()">Register Now</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-xxl-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration='1000'> 
+                    <div class="course-Wrapper">
+                        <a href="">
+                            <div class="course-description">
+                                <h1>Data Analytics</h1>
+                                <p>Data Analytics: Transform data into actionable insights, make data-driven decisions, and gain a competitive edge in today's data-driven world.</p>
+                                <div class="icons">
+                                    <h4><i class="bi bi-arrow-right"></i></h4>
+                                    <img src="analytics.png" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="image-Wrapper">
+                                <img src="background-img-7.jpg" alt="" class="img-fluid" style="object-fit: cover;">
+                            </div>
+                        </a>
+                        <button onclick="registerNow()">Register Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Courses-Section ends here -->
+
+
+<!-- Footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="container"style=" border-bottom: 2px solid #4e6656;">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-5 col-lg-5 about">
+                        <h3>About Us</h3>
+                        <p>Career Bouwen, the best software training company in Calicut has proved its expertise by training and placing several hundreds of students both in MNC’s like UST Global, Infosys, Oracle etc and SME’s like Nucore Software Solutions, Sesame, IOSS, ULTS.</p>
+
+                        <!-- Social-Icons -->
+                        <div class="socialIcons-Container mb-3" style="display: flex;">
+                            <div class="me-3">
+                                <a href="http://www.facebook.com"><i class="bi bi-facebook"></i></a>
+                            </div>
+                            <div class="me-3">
+                                <a href="http://www.twitter.com"><i class="bi bi-twitter-x"></i></a>
+                            </div>
+                            <div class="me-3">
+                                <a href="http://www.bi-linkedin.com"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                            <div class="me-3">
+                                <a href="http://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-2 menu">
+                        <h3>Company</h3>
+                        <a href="about.html">About us</a><br>
+                        <a href="">Placements</a><br>
+                        <a href="#testimonial">Testimonials</a><br>
+                        <a href="">Gallery</a><br>
+                        <a href="contact_us.html">Contact us</a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-3 col-lg-2 menu">
+                        <h3>Courses</h3>
+                        <a href="dataScience.html">Data Science</a><br>
+                        <a href="dataAnalytics.html">Data Analytics</a><br>
+                        <a href="busiAnalytics.html">Business Analytics</a><br>
+                        <a href="mern.html">Mern Stack</a><br>
+                        <a href="python.html">Python Fullstack</a><br>
+                        <a href="digiMarketing.html">Digital Marketing</a>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 contactInfo">
+                        <h3>Contact</h3>
+                        <div class="contactInfo">
+                            <div class="wrapper">
+                                <span><h5><i class="bi bi-headset"></i></h5></span>
+                                <a href="tel:+91 884 869 7113">+91 884 869 7113</a>
+                            </div>
+                            <div class="wrapper">
+                                <span><h5><i class="bi bi-envelope"></i></h5></i></span>
+                                <a href="http://www.contact@techolas.com">contact@techolas.com</a>
+                            </div>
+                            <div class="wrapper">
+                                <span><h5><i class="bi bi-geo-alt"></i></h5></span>
+                                <a>Foura Complex, Mavoor Rd, opposite National Hospital, Calicut, Kerala, 673001</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="background-color: #FFFFFF;">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-lg-4">
+                    <img src="CareerBouwen[3].jpg" alt="" class="img-fluid" style="max-height: 120px;">
+                </div>
+                <div class="col-lg-8">
+                    <p class="copyright text-center mt-3" style="font-family: 'Poppins', sans-serif;">©2023 Techolas Technologies Pvt Ltd. All Rights Reserved. Developed by Techolas</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="courses.js"></script>
+    
+    <!-- Reg-form validation -->
+    <script src="RegFormValidation.js"></script>
+    
+    <!-- Scroll-Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+
+</body>
+</html>
